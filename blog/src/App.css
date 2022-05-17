@@ -1,3 +1,30 @@
+/* basic setting */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+/* style */
+.black_nav {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+
+
 .App {
   text-align: center;
 }
