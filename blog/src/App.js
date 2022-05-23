@@ -19,6 +19,12 @@ function App() {
     return 청소변경(글제목[3]);
   }
 
+  function 변경함수() {
+    let copy = [...글제목];
+    copy[1] = '짐카로 변경';
+    b(copy);
+  }
+
   return (
     <div className="App">
       <div className="black_nav">
@@ -30,7 +36,7 @@ function App() {
         <p>5월 18일 발행</p>
       </div>
       <div className="list">
-        <h4>{ 글제목[1] }</h4>
+        <h4>{ 글제목[1] } <button onClick={ 변경함수 }>변경</button></h4>
         <p>5월 18일 발행</p>
       </div>
       <div className="list">
