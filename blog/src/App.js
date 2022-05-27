@@ -10,6 +10,7 @@ function App() {
   let [글제목, b] = useState(['미금역 삼겹살', '짐싸 어플', '세탁기 청소', '에어컨 청소']);
   let [좋아요, 좋아요변경] = useState(0);
   let [청소, 청소변경] = useState('변경 부분');
+  let [modal, setModal] = useState(false);
 
   function 함수() {
     return 좋아요변경(좋아요++);
