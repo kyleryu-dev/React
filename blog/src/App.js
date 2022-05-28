@@ -41,10 +41,12 @@ function App() {
         <p>5월 18일 발행</p>
       </div>
       <div className="list">
-        <h4>{ 청소 } <button onClick={ 청소함수 }>변경</button></h4>
+        <h4 onClick={()=>{ modal == true ? setModal(false) : setModal(true) }}>{ 청소 } <button onClick={ 청소함수 }>변경</button></h4>
         <p>5월 18일 발행</p>
       </div>
-      <Modal/>
+      {
+        modal == true ? <Modal/> : null
+      }
     </div>
     // App
   );
