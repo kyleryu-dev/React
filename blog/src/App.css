@@ -36,7 +36,9 @@ li {
   text-align: left;
 }
 
-
+button {
+  display: inline;
+}
 
 .App {
   text-align: center;

@@ -26,6 +26,10 @@ function App() {
     b(copy);
   }
 
+  [1,2,3].map(function(a){
+    return '123'
+  })
+
   return (
     <div className="App">
       <div className="black_nav">
@@ -41,7 +45,8 @@ function App() {
         <p>5월 18일 발행</p>
       </div>
       <div className="list">
-        <h4 onClick={()=>{ modal == true ? setModal(false) : setModal(true) }}>{ 청소 } <button onClick={ 청소함수 }>변경</button></h4>
+        <h4 onClick={()=>{ modal == true ? setModal(false) : setModal(true) }}>{ 청소 } </h4>
+        <button onClick={ 청소함수 }>변경</button>
         <p>5월 18일 발행</p>
       </div>
       {
